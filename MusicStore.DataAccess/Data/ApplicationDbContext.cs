@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MusicSore.Entities.ViewModels;
 
 namespace MusicStore.Data
 {
@@ -9,5 +10,6 @@ namespace MusicStore.Data
             : base(options)
         {
         }
+        public DbSet<Category> Categories { get; set; }
     }
 }
